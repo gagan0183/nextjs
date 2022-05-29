@@ -1,20 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import App from "../src/App";
 
-const InputElement = () => {
+function index() {
+  return <App pageName="Home" />
+}
 
-  const [inputText, setInputText] = useState("");
-
-  return (
-    <div>
-      <input
-        onChange={(e) => 
-          setInputText(e.target.value)
-        }
-        placeholder="Enter some text"
-      />
-      {inputText}
-    </div>
-  );
-};
-
-export default InputElement;
+export default index;
